@@ -548,7 +548,7 @@ img.pull-left {
 	top: 0;
 	right: 100%;
 	width: 100%;
-	height: 6px;
+	height: .8px;
 }
 
 /** 
@@ -1270,7 +1270,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-	background: #ebebeb;
+	background: #FFFFFF;
 }
 
 .grey-section p.lead {
@@ -1278,7 +1278,7 @@ input::-moz-focus-inner {
 }
 
 .section-intro {
-	max-width: 780px;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1806,7 +1806,7 @@ header .logo a {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 10rem;
 }
 
 #about .section-intro {
@@ -1835,7 +1835,7 @@ header .logo a {
 .about-content {
 	position: relative;
 	text-align: left;
-	max-width: 950px;
+	max-width: 990px;
 	margin-bottom: 3.6rem;
 	margin-top: 10rem;
 }
@@ -1883,15 +1883,19 @@ header .logo a {
 	/* a box with shadow */
 	position: relative;
 	/* margin-bottom: 3.6rem; */
-	padding: 2.4rem;
+	padding-bottom: 1rem;
 	background: #FFFFFF;
-	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1); */
 }
 
 .about-content .news-box .news-box-header {
 	/* have a span with time on the right hand side, left is the title of the news */
 	position: relative;
-	margin-bottom: 1.4rem;
+	/* margin-bottom: 1.4rem; */
+}
+
+.about-content .news-box .news-box-header h5 {
+	margin-bottom: 0;
 }
 
 .about-content .news-box .news-box-content p {
@@ -1901,6 +1905,7 @@ header .logo a {
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
+	margin-bottom: 5px;
 }
 
 .about-content .news-box .news-box-content-expand p {
@@ -2051,8 +2056,9 @@ adding a border to the button */
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 0;
+	padding-bottom: 8rem;
+	background-color: #FFFFFF;
 }
 
 #resume .resume-header {
@@ -2064,7 +2070,7 @@ adding a border to the button */
 }
 
 #resume .resume-timeline {
-	max-width: 980px;
+	/* max-width: 980px; */
 }
 
 #resume .timeline-wrap {
@@ -2080,7 +2086,7 @@ adding a border to the button */
 	height: 100%;
 	background: rgba(0, 0, 0, 0.1);
 	position: absolute;
-	left: 35%;
+	left: 45%;
 	top: 0;
 }
 
@@ -2098,7 +2104,7 @@ adding a border to the button */
 	text-align: center;
 	color: #FFFFFF;
 	position: absolute;
-	left: 35%;
+	left: 45%;
 	/* top: .9rem; */
 	margin-left: -2.4rem;
 }
@@ -2111,8 +2117,8 @@ adding a border to the button */
 
 #resume .timeline-header {
 	float: left;
-	width: 35%;
-	padding-right: 90px;
+	width: 40%;
+	padding-right: 5px;
 	text-align: right;
 }
 
@@ -2136,7 +2142,7 @@ adding a border to the button */
 }
 
 #resume .timeline-content {
-	margin-left: 35%;
+	margin-left: 45%;
 	padding-left: 60px;
 }
 
@@ -3181,7 +3187,7 @@ footer {
 
 footer a,
 footer a:visited {
-	color: #FFFFFF;
+	color: #151515;
 }
 
 footer a:hover,
@@ -3213,7 +3219,7 @@ footer .footer-social li {
 }
 
 footer .footer-social li a {
-	color: #FFFFFF;
+	color: #151515;
 }
 
 footer .copyright span {
@@ -3298,3 +3304,45 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.unavailable {
+	color: #D3D3D3 !important;
+	pointer-events: none;
+
+}
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
