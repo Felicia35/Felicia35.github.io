@@ -1570,235 +1570,6 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
- */
-#intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 100%;
-	min-height: 720px;
-	display: table;
-	position: relative;
-	text-align: center;
-}
-
-.intro-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #111111;
-	opacity: .85;
-}
-
-.intro-content {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	-webkit-transform: translateY(-2.1rem);
-	-ms-transform: translateY(-2.1rem);
-	transform: translateY(-2.1rem);
-}
-
-.intro-content h1 {
-	color: #FFFFFF;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 8.4rem;
-	line-height: 1.071;
-	max-width: 900px;
-	margin-top: 0;
-	margin-bottom: .6rem;
-	margin-left: auto;
-	margin-right: auto;
-	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.intro-content h5 {
-	color: #3063ba;
-	font-family: "poppins-bold", sans-serif;
-	font-size: 2.3rem;
-	line-height: 1.565;
-	margin-bottom: 0;
-	text-transform: uppercase;
-	letter-spacing: .3rem;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-}
-
-.intro-content .intro-position {
-	font-family: "lora-regular", serif;
-	font-size: 1.7rem;
-	line-height: 2.4rem;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	color: #FFFFFF;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-}
-
-.intro-content .intro-position span {
-	display: inline-block;
-}
-
-.intro-content .intro-position span::after {
-	content: "|";
-	text-align: center;
-	display: inline-block;
-	padding: 0 8px 0 14px;
-	color: rgba(255, 255, 255, 0.3);
-}
-
-.intro-content .intro-position span:first-child::before {
-	content: "|";
-	text-align: center;
-	display: inline-block;
-	padding: 0 14px 0 8px;
-	color: rgba(255, 255, 255, 0.3);
-}
-
-.intro-content .button {
-	color: #FFFFFF !important;
-	border-color: rgba(255, 255, 255, 0.3);
-	height: 6rem !important;
-	line-height: 5.4rem !important;
-	padding: 0 3.5rem 0 3rem !important;
-	margin-top: .6rem;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	letter-spacing: .25rem;
-}
-
-.intro-content .button:hover,
-.intro-content .button:focus {
-	border-color: #3063ba;
-}
-
-.intro-content .button::after {
-	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
-	font-size: 1.6rem;
-	line-height: inherit;
-	text-align: center;
-	position: relative;
-	left: 1.2rem;
-}
-
-.intro-social {
-	display: block;
-	/* position: absolute; */
-	width: 100%;
-	left: 0;
-	/* bottom: 7.2rem; */
-	/* font-size: 1.3rem; */
-	margin: 0;
-	margin-bottom: 3rem;
-	padding: 0;
-}
-
-.intro-social li {
-	display: inline-block;
-	margin: 0 10px;
-	padding: 0;
-}
-
-.intro-social li a,
-.intro-social li a:visited {
-	color: #1f1f1f;
-}
-
-.intro-social li a:hover,
-.intro-social li a:focus {
-	color: #3063ba;
-}
-
-/**
- * responsive:
- * Intro
- * --------------------------------------------------------------- 
- */
-@media only screen and (max-width:1024px) {
-	.intro-content h1 {
-		font-size: 7.6rem;
-	}
-
-	.intro-social {
-		font-size: 3rem;
-	}
-
-	.intro-social li {
-		margin: 0 15px;
-	}
-}
-
-@media only screen and (max-width:768px) {
-	#intro {
-		min-height: 660px;
-	}
-
-	.intro-content h1 {
-		font-size: 5.2rem;
-	}
-
-	.intro-content h5 {
-		font-size: 1.8rem;
-	}
-
-	.intro-content .intro-position {
-		font-size: 1.3rem;
-	}
-
-	.intro-social {
-		font-size: 2.5rem;
-	}
-
-	.intro-social li {
-		margin: 0 10px;
-	}
-}
-
-@media only screen and (max-width:600px) {
-	#intro {
-		min-height: 600px;
-	}
-
-	.intro-content h1 {
-		font-size: 4.6rem;
-		margin-bottom: .6rem;
-	}
-
-	.intro-content h5 {
-		font-size: 1.5rem;
-		margin-bottom: .3rem;
-		letter-spacing: .2rem;
-	}
-
-	.intro-content .intro-position {
-		font-size: 1.2rem;
-	}
-
-	.intro-content .intro-position span {
-		padding: 0 .6rem;
-	}
-
-	.intro-content .intro-position span::before,
-	.intro-content .intro-position span::after {
-		display: none !important;
-	}
-
-	.intro-social {
-		font-size: 2.4rem;
-	}
-}
-
-
-/** 
- * ===================================================================
  * 11. about - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
@@ -1813,31 +1584,69 @@ header .logo a {
 	margin-bottom: 3rem;
 }
 
-.intro-info {
-	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -50px;
-}
-
-.intro-info img {
-	height: 24rem;
-	width: 24rem;
-	border-radius: 50%;
-	margin: 0 2rem 0 0;
-	float: left;
-}
-
-.intro-info .lead {
-	text-align: justify;
-	padding-left: 13rem;
-}
-
 .about-content {
 	position: relative;
+	display: grid;
+	grid-template-columns: 24rem 1fr;
+	grid-template-areas:
+		"photo bio"
+		"links news";
+	column-gap: 4rem;
 	text-align: left;
 	max-width: 990px;
 	margin-bottom: 3.6rem;
-	margin-top: 10rem;
+	margin-top: 4.2rem;
+}
+
+.profile-photo {
+	grid-area: photo;
+	height: 24rem;
+	width: 24rem;
+	max-width: none;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	display: block;
+	margin: 0 0 2rem;
+}
+
+.about-bio {
+	grid-area: bio;
+}
+
+.profile-links {
+	grid-area: links;
+	align-self: end;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 24rem;
+}
+
+.profile-links li a {
+	display: block;
+	padding: .15rem 0;
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	letter-spacing: .05rem;
+	color: #888888;
+}
+
+.profile-links li a:hover,
+.profile-links li a:focus {
+	color: #313131;
+}
+
+.about-news {
+	grid-area: news;
+	align-self: end;
+	min-width: 0;
+}
+
+.about-bio .lead {
+	text-align: justify;
 }
 
 .about-content h3 {
@@ -1845,6 +1654,36 @@ header .logo a {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
+	margin-top: 3.6rem;
+}
+
+.news-scroll {
+	max-height: 12.6rem;
+	overflow-y: auto;
+	padding-right: 1.2rem;
+}
+
+.news-item {
+	display: flex;
+	align-items: baseline;
+	gap: 1.6rem;
+	padding: .5rem 0;
+}
+
+.news-item:first-child {
+	padding-top: 0;
+}
+
+.news-date {
+	flex: 0 0 8rem;
+	font-family: "lora-regular", serif;
+	font-size: 1.4rem;
+	color: #888888;
+}
+
+.news-body {
+	flex: 1;
+	min-width: 0;
 }
 
 .about-content .info-list {
@@ -1879,92 +1718,25 @@ header .logo a {
 }
 
 
-.about-content .news-box {
-	/* a box with shadow */
-	position: relative;
-	/* margin-bottom: 3.6rem; */
-	padding-bottom: 1rem;
-	background: #FFFFFF;
-	/* box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1); */
-}
-
-.about-content .news-box .news-box-header {
-	/* have a span with time on the right hand side, left is the title of the news */
-	position: relative;
-	/* margin-bottom: 1.4rem; */
-}
-
-.about-content .news-box .news-box-header h5 {
+.news-body h5 {
+	font-family: "lora-regular", serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #888888;
+	text-transform: none;
+	letter-spacing: normal;
 	margin-bottom: 0;
 }
 
-.about-content .news-box .news-box-content p {
+.news-body p {
 	text-align: left;
+	color: #888888;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
-	margin-bottom: 5px;
-}
-
-.about-content .news-box .news-box-content-expand p {
-	text-align: left;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 100;
-	-webkit-box-orient: vertical;
-}
-
-.about-content .news-box .news-box-content .news-toggle {
-	/* small button wrap [Read More] at the bottom right corner */
-	position: absolute;
-	bottom: 0;
-	right: 0;
-
-	/* button */
-	display: inline-block;
-	padding: 0 1.5rem;
-	line-height: 2.4rem;
-	background: #FFFFFF;
-	/* border: 1px solid #888888; */
-	/* border-radius: 2px; */
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.1rem;
-	color: #888888;
-	text-transform: capitalize;
-	letter-spacing: .2rem;
-	cursor: pointer;
-	height: 2.5rem;
-}
-
-/* hover news-toggle
-adding a border to the button */
-
-.about-content .news-box .news-box-content .news-toggle:hover {
-	border: 1px solid #313131;
-	color: #313131;
-	background-color: #fff;
-}
-
-
-.about-content .news-box .news-box-header h5 {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.6rem;
-	font-weight: 300;
-	text-transform: capitalize;
-	letter-spacing: .25rem;
-}
-
-.about-content .news-box .news-box-header span {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-family: "poppins-regular", sans-serif;
-	color: #888888;
-	font-size: 1rem;
-	line-height: 1;
+	margin-bottom: 0;
 }
 
 .more-news a {
@@ -1994,30 +1766,37 @@ adding a border to the button */
  * about
  * ------------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
-	.intro-info {
-		margin-right: 0;
-		margin-left: 0;
-	}
-}
-
 @media only screen and (max-width:768px) {
-	.intro-info img {
-		height: 7.8rem;
-		width: 7.8rem;
+	.about-content {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"photo"
+			"links"
+			"bio"
+			"news";
+		justify-items: center;
 	}
 
-	.intro-info .lead {
-		padding-left: 11rem;
+	.profile-photo {
+		margin: 0 auto 2rem;
+	}
+
+	.profile-links {
+		align-self: auto;
+		margin: 0 auto;
+	}
+
+	.about-bio {
+		width: 100%;
+	}
+
+	.about-news {
+		align-self: auto;
+		width: 100%;
 	}
 
 	.about-content h3 {
 		text-align: center;
-	}
-
-	.about-content .info-list,
-	.about-content .skill-bars {
-		margin-bottom: 4.2rem;
 	}
 
 	.button-section .button {
@@ -2031,21 +1810,9 @@ adding a border to the button */
 }
 
 @media only screen and (max-width:600px) {
-	.intro-info {
-		text-align: center;
-		margin-top: 3rem;
-	}
-
-	.intro-info img {
-		height: 6.6rem;
-		width: 6.6rem;
-		float: none;
-		display: inline-block;
-	}
-
-	.intro-info .lead {
-		padding-left: 0;
-		text-align: center;
+	.profile-photo {
+		height: 12rem;
+		width: 12rem;
 	}
 }
 
